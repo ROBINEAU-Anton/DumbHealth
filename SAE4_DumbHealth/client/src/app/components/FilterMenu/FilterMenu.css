@@ -1,0 +1,173 @@
+@import "../../../utils/colors.css";
+
+/*code from christina keller https://codepen.io/katorah83/pen/JJqaga adapt to our website*/
+.session-filter {
+    width: 260px;
+    background-color: var(--black);
+    display: block;
+    position: fixed;
+    top: 12vh;
+    left: 0;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    will-change: transform;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.session-filter.active {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+.session-filter.active .session-filter-tab p .material-icons {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.session-filter #accordion .accordion-content {
+    display: none;
+    width: 100%;
+}
+.session-filter #accordion .accordion-toggle {
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.session-filter #accordion .accordion-toggle .material-icons {
+    font-size: 32px;
+}
+.session-filter .filter-section {
+    padding: 20px 20px 15px;
+    border-bottom: 1px solid ;
+}
+.session-filter .filter-section .material-icons,
+.session-filter .filter-section h6,
+.session-filter .filter-section label {
+    color: #FFF;
+}
+.session-filter .filter-section h6 {
+    font-weight: 300;
+}
+.session-filter .filter-section label {
+    font-size: 16px;
+    margin-left: 3px;
+}
+.session-filter .filter-section .material-icons {
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.session-filter .filter-section.active.top header,
+.session-filter .filter-section.active.bottom header,
+.session-filter .filter-section.active.type header,
+.session-filter .filter-section.active.difficulty header{
+    width: 100%;
+}
+.session-filter .filter-section.active.top .accordion-content,
+.session-filter .filter-section.active.bottom .accordion-content,
+.session-filter .filter-section.active.type .accordion-content,
+.session-filter .filter-section.active.difficulty .accordion-content{
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.session-filter .filter-section.active.bottom .field-wrapper,
+.session-filter .filter-section.active.type .field-wrapper,
+.session-filter .filter-section.active.difficulty .field-wrapper {
+    width: 100%;
+}
+.session-filter .filter-section.active.top .field-wrapper{
+    width: 50%;
+}
+.session-filter .filter-section.active .accordion-toggle .material-icons {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.session-filter .filter-section .field-wrapper {
+    margin-bottom: 5px;
+}
+.session-filter .filter-section .field-wrapper select {
+    background-image: url(https://www.connectwise.com/~/media/Icons/Light/select-dropdown-arrow.ashx);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    border: 1px solid var(--background-color);
+    color: var(--background-color);
+    background-color: transparent;
+    background-size: 20px 25px;
+    border-radius: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.session-filter .filter-section .material-icons {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.session-filter .session-filter-tab {
+    padding: 20px;
+    background-color: var(--black);
+    -webkit-transform: rotate(90deg) translateY(-100%);
+    -ms-transform: rotate(90deg) translateY(-100%);
+    transform: rotate(90deg) translateY(-100%);
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    top: 0;
+    left: 100%;
+    position: absolute;
+    cursor: pointer;
+}
+.session-filter .session-filter-tab p {
+    margin-bottom: 0;
+    color: var(--background-color);
+    font-size: 24px;
+    font-weight: 300;
+    white-space: nowrap;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.session-filter .session-filter-tab p .material-icons {
+    font-size: 32px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}

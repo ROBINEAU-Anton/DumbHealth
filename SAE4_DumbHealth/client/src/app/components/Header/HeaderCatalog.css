@@ -1,0 +1,36 @@
+@import '../../../utils/colors.css';
+
+.page > header {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: var(--black);
+}
+
+.icons {
+    justify-self: left;
+    display: flex;
+    margin: 2.5vh 1.5vw;
+    gap: 2vh;
+    align-self: center;
+    color: var(--background-color);
+}
+
+
+.icons img:last-child {
+    height: 44px;
+}
+
+.icons img:hover {
+    cursor: pointer;
+}
+
+header h1 {
+    position: absolute;
+    left: 50%;
+    color: var(--background-color);
+    transform: translateX(-50%);
+    font-size: 80px;
+}

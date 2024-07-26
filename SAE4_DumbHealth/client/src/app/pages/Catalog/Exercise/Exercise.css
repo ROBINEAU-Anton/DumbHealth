@@ -1,0 +1,35 @@
+.content i {
+    font-family: "Material Icons", Kanit, serif;
+    position: absolute;
+    left: 0;
+    font-size: 80px;
+}
+.content i:hover {
+    cursor: pointer;
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+
+.content > * {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 50px;
+    margin: 2vh 5vw;
+}
+
+.content h3, .content h4 {
+    font-size: 35px;
+    margin: 1vh 5vw
+}
+
+.content h6 {
+    font-size: 20px;
+    margin: 2vh 10vw;
+}

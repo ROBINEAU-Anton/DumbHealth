@@ -1,0 +1,75 @@
+@import '../../../utils/colors.css';
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    padding: 5vh 15vw;
+}
+
+.welcome .welcomeTitle {
+    z-index: 1;
+}
+
+.welcome .textDecoration {
+    position: absolute;
+    color: var(--decoration-color);
+    z-index: 0;
+    font-size: 80px;
+    top: 100px;
+}
+
+hr {
+    display: inline-block;
+    background-color: var(--grey);
+    width: 20vw;
+    height: 0.4vh;
+    border: none;
+    position: relative;
+    left: 50vw;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.homeDescription{
+    text-align: center;
+    margin: 5vh 15vw;
+    z-index: 0;
+}
+
+.choiceArea {
+    display: grid;
+    grid-column: auto;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    grid-gap: 5vw;
+    margin: 10vh 5vw;
+}
+
+.choiceArea a {
+    display: flex;
+    justify-content: center;
+    max-height: 750px;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.choiceArea a img {
+    max-width: 120%;
+    align-self: center;
+}
+
+.choiceArea a h2 {
+    color: var(--decoration-color);
+    position: absolute;
+    z-index: 0;
+    margin: 10vh 2vw;
+    font-size: 50px;
+}
+
+.choiceArea a .exercicesTitle {
+    align-self: end;
+}
+
+.choiceArea a .nutritionTitle {
+    align-self: end;
+}

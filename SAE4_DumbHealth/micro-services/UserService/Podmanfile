@@ -1,0 +1,22 @@
+# Use official node image at version 21
+FROM node:21-bullseye
+
+# Create app dir
+RUN mkdir -p /usr/src/app
+
+# Change work dir as the created one
+WORKDIR /usr/src/app
+
+# Copy local file into the container in the app dir
+COPY . .
+
+# Install dependencies
+RUN npm i
+RUN npm i -g nodemon pm2
+
+# Expose port 5002
+EXPOSE 5002
+
+# Run the service
+CMD ["pm2-runtime", "start", "--name", "service", "--", "nodemon", "server.js"]
+

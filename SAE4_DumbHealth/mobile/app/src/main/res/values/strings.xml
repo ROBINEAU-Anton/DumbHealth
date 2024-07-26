@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">eq_04_00_SAE_Mobile</string>
+    <string name="placeholder">PLACEHOLDER</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla purus nec nisi placerat facilisis. Fusce sodales accumsan orci, ut dignissim nisi malesuada vel. Sed odio enim, finibus at mi nec, vestibulum molestie metus. In eros felis, lacinia eget est in, semper placerat nulla.</string>
+    <string name="main_title">Recettes</string>
+    <string name="main_recipe_input_placeholder">Rechercher un plat</string>
+    <string name="main_label_type">Cuisine</string>
+    <string name="main_label_diet">Régime</string>
+    <string name="main_label_number">Number</string>
+    <string name="main_search_button">Rechercher</string>
+    <string name="result_results_title">Résultats</string>
+    <string name="result_view_image_alt">Illustration du repas</string>
+    <string name="result_view_prep">Préparation:</string>
+    <string name="result_view_diets">Régime(s):</string>
+    <string name="result_activity_back">Retour</string>
+    <string name="result_view_imgbtn_alt">Open recipe source in browser</string>
+    <string name="result_view_score_title">Score:</string>
+
+    <string-array name="cuisines_french">
+        <item>Africaine</item>
+        <item>Asiatique</item>
+        <item>Américaine</item>
+        <item>Britannique</item>
+        <item>Cajun</item>
+        <item>Caribéenne</item>
+        <item>Chinoise</item>
+        <item>Européenne de l\'Est</item>
+        <item>Européenne</item>
+    </string-array>
+
+    <string-array name="cuisines">
+        <item>African</item>
+        <item>Asian</item>
+        <item>American</item>
+        <item>British</item>
+        <item>Cajun</item>
+        <item>Caribbean</item>
+        <item>Chinese</item>
+        <item>Eastern European</item>
+        <item>European</item>
+    </string-array>
+
+    <string-array name="diets_french">
+        <item>Omnivore</item>
+        <item>Pescétarienne</item>
+        <item>Végétarienne</item>
+        <item>Végétarienne ovo</item>
+        <item>Végétarienne lacto</item>
+        <item>Végétalienne</item>
+        <item>Fruitaire</item>
+        <item>Paléo</item>
+    </string-array>
+
+    <string-array name="diets">
+        <item>Omnivore</item>
+        <item>Pescetarian</item>
+        <item>Vegetarian</item>
+        <item>Ovo Vegetarian</item>
+        <item>Lacto Vegetarian</item>
+        <item>Vegan</item>
+        <item>Fruitarian</item>
+        <item>Paleo</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

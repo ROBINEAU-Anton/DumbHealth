@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Kanit';
+    src: url('./fonts/Kanit/Kanit-Regular.ttf') format('truetype');
+    src: url('./fonts/Kanit/Kanit-Bold.ttf') format('truetype');
+    src: url('./fonts/Kanit/Kanit-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Marker';
+    src: url('./fonts/Permanent_Marker/PermanentMarker-Regular.ttf') format('truetype');
+}

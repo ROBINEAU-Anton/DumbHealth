@@ -1,0 +1,27 @@
+@import "../../../utils/colors.css";
+
+header {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--black);
+}
+
+.icons {
+    justify-self: left;
+    display: flex;
+    margin: 1.5vh 1.5vw;
+    gap: 2vh;
+}
+
+.icons img:hover {
+    cursor: pointer;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 60px;
+}

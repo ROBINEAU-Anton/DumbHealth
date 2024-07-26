@@ -1,0 +1,26 @@
+.page {
+    display: grid;
+    grid-template-columns: auto 95vw;
+    grid-template-areas:
+            "header header"
+            "filter content";
+}
+
+.page > header {
+    grid-area: header;
+}
+
+.content {
+    grid-area: content;
+    margin: 3vh 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3vh 3vw;
+}
+
+.content.displayed {
+    justify-content: start;
+}
+

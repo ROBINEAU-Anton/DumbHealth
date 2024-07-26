@@ -1,0 +1,21 @@
+@import "../../../utils/colors.css";
+
+.exercise {
+    padding: 2vh 1vw;
+    background-color: var(--background-color);
+    width: calc(95vw/4);
+    height: calc(95vw/4);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.exercise > * {
+    text-align: center;
+}
+
+.exercise:hover {
+    cursor: pointer;
+}

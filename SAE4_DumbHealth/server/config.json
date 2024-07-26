@@ -1,0 +1,9 @@
+{
+    "services": [
+        {
+            "name": "ExerciseService",
+            "host": "http://localhost:5000",
+            "inAppName": "exe"
+        }
+    ]
+}
